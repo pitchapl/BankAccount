@@ -22,5 +22,10 @@ describe BankAccount do
       count=account1.numberOfTransactions()
       expect(count).to eq(4)
     end
+    it "check changed name" do
+    	 account1=BankAccount.new(5000)
+    	 new_name = account1.changeName("New Name")
+    	 expect(new_name).to eq("New Name")
+    end
 end
 end
