@@ -27,5 +27,8 @@ describe BankAccount do
     	 new_name = account1.changeName("New Name")
     	 expect(new_name).to eq("New Name")
     end
+    it "check number" do
+      x=lovemac(3)
+      expect(x).to eq("Love")
 end
 end
